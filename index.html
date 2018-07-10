@@ -23,21 +23,21 @@
 	      	var heartattack_count=0;//sets beginning count fo heartattack resultsss
 		var stroke_count=0;//sets beginning count for stroke
 		
-		function heartattackAdd(){
-			heartattack_count = heartattack_count + 1;
+		function depressionriskAdd(){
+			depressionrisk_count = depressionrisk_count + 1;
 		}
 		//originally coded for allergy, but now it is defined as heartattack
-		function strokeAdd(){
-			stroke_count = stroke_count + 1;
+		function nodepressionriskAdd(){
+			nodepressionrisk_count = nodepressionrisk_count + 1;
 		}
 		//originally coded for cold, but i changed it
 	
 		function resultsCalc(){
-			var heartattackPercent = (heartattack_count/4)*100 //codes for how to measure percentages at the end
-			var strokePercent = (stroke_count/4)*100 //I added this in as well; same coding as previous
+			var depressionriskPercent = (depressionrisk_count/4)*100 //codes for how to measure percentages at the end
+			var nodepressionriskPercent = (nodepressionrisk_count/4)*100 //I added this in as well; same coding as previous
 		var resultText=document.getElementById("results");
 		
-		resultText.innerHTML = "Probability it is heartattack =" + heartattackPercent + "%" + "<br> Probability it is a stroke =" + strokePercent + "%";
+		resultText.innerHTML = "Probability it is depressionrisk =" + depressionriskPercent + "%" + "<br> Probability it is a nodepressionrisk =" + nodepressionriskPercent + "%";
 		}
 	      //I'm keeping basically the same functions so that it can be easy butttt i know it could be improved
       </script>
@@ -82,9 +82,9 @@
 
 		<div role="main" class="ui-content">
 			<p>Does anyone in your family have depression/other mental disorders?</p><!--first question; yes for depression risk, no for no depression risk -->
-			<p><a href="#page2" class="ui-btn" onclick="heartattackAdd();" style:"color:blue">Yes</a></p><!-- Attempting to get the button to format correctly -->
+			<p><a href="#page2" class="ui-btn" onclick="depressionriskAdd();" style:"color:blue">Yes</a></p><!-- Attempting to get the button to format correctly -->
 			<!-- I added in color style red for the button, maybe it will work --><!--red does not work -->
-			<p><a href="#page2" class="ui-btn" onclick="strokeAdd();" style:"color:blue">No</a></p><!-- Attempting to get the button to format correctly --><!-- maybe blue color will show up -->
+			<p><a href="#page2" class="ui-btn" onclick="nodepressionriskAdd();" style:"color:blue">No</a></p><!-- Attempting to get the button to format correctly --><!-- maybe blue color will show up -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed">
@@ -101,8 +101,8 @@
 
 		<div role="main" class="ui-content">
 			<p>Do you get 7-8 hours on average of sleep every night?</p><!-- second question, yes for depression risk, no for no depression risk -->
-			<p><a href="#page3" class="ui-btn" onclick="strokeAdd();">Yes</a></p><!-- this worked beautifully -->
-			<p><a href="#page3" class="ui-btn" onclick="heartattackAdd();">No</a></p><!-- absolutely stellar work me, oh me you shouldn't have, oh meeee -->
+			<p><a href="#page3" class="ui-btn" onclick="depressionriskAdd();">Yes</a></p><!-- this worked beautifully -->
+			<p><a href="#page3" class="ui-btn" onclick="nodepressionriskAdd();">No</a></p><!-- absolutely stellar work me, oh me you shouldn't have, oh meeee -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed">
@@ -119,8 +119,8 @@
 
 		<div role="main" class="ui-content">
 			<p>Do you have suicidal thoughts/thoughts about death?</p><!-- third question, yes for depression risk, no for no depression risk -->
-			<p><a href="#page4" class="ui-btn" onclick="strokeAdd();">Yes</a></p><!-- these are just so good -->
-			<p><a href="#page4" class="ui-btn" onclick="heartattackAdd();">No</a></p><!-- dang this code is amazing, I just added these in awesomely, I'm good -->
+			<p><a href="#page4" class="ui-btn" onclick="depressionriskAdd();">Yes</a></p><!-- these are just so good -->
+			<p><a href="#page4" class="ui-btn" onclick="nodepressionriskAdd();">No</a></p><!-- dang this code is amazing, I just added these in awesomely, I'm good -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed">
@@ -137,8 +137,8 @@
 
 		<div role="main" class="ui-content">
 			<p>Do you feel down/sad more than 4 days a week, without reason?</p> <!--fourth question, yes for depression risk, no for no depression risk --> 
-			<p><a href="#page5" class="ui-btn" onclick="heartattackAdd();">Yes</a></p>
-			<p><a href="#page5" class="ui-btn" onclick="strokeAdd();">No</a></p><!-- yoooo this is amazingg -->
+			<p><a href="#page5" class="ui-btn" onclick="depressionriskAdd();">Yes</a></p>
+			<p><a href="#page5" class="ui-btn" onclick="nodepressionriskAdd();">No</a></p><!-- yoooo this is amazingg -->
 		</div><!-- /content -->
 
 		<div data-role="footer" data-position="fixed">
